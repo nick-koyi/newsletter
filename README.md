@@ -14,7 +14,7 @@ This is a solution to the [Newsletter sign-up form with success message challeng
 
 ### Links
 
-- Live Site URL: [https://recipepage-sooty.vercel.app/]
+- Live Site URL: [https://newsletter-one-rho.vercel.app/]
 
 ## My process
 
