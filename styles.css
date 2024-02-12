@@ -1,0 +1,171 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('assets/font/roboto-v30-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('assets/font/roboto-v30-latin-700.woff2') format('woff2');
+}
+
+:root {
+  --tomato: hsl(4, 100%, 67%);
+  --dark-slate-grey: hsl(234, 29%, 20%);
+  --charcoal-grey: hsl(235, 18%, 26%);
+  --grey: hsl(231, 7%, 60%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--dark-slate-grey);
+}
+
+.container {
+  display: flex;
+  width: 800px;
+  background-color: var(--white);
+  padding: 30px;
+  border-radius: 20px;
+}
+
+h1 {
+  margin-bottom: 10px;
+  font-size: 40px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+.left {
+  align-self: center;
+  width: 60%;
+}
+
+.right {
+  width: 40%;
+}
+
+.right img {
+  width: 100%;
+}
+
+ul {
+  list-style-image: url(imgs/icon-list.svg);
+  list-style-position: inside;
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+input {
+  padding: 10px 20px;
+  font-family: inherit;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid var(--grey);
+}
+input:focus {
+  border: 1px solid var(--dark-slate-grey);
+}
+
+button {
+  font-family: inherit;
+  margin-top: 20px;
+  padding: 15px 20px;
+  border: none;
+  outline: none;
+  color: var(--white);
+  border-radius: 5px;
+  background: var(--charcoal-grey);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+button:hover {
+  background: var(--tomato);
+}
+
+.hide {
+  display: none;
+}
+.container-2 {
+  background: var(--white);
+  width: 400px;
+  padding: 40px;
+  border-radius: 5px;
+}
+
+.container-2 h1 {
+  font-size: 40px;
+}
+
+.container-2 img {
+  width: 50px;
+}
+
+.container-2 button {
+  width: 100%;
+}
+
+@media (max-width: 375px) {
+  .container {
+    flex-direction: column-reverse;
+    width: 100%;
+    border-radius: 0;
+    padding: 0;
+  }
+  .container h1 {
+    font-size: 30px;
+  }
+  .left {
+    align-self: center;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .right {
+    width: 100%;
+  }
+
+  .right img {
+    content: url(imgs/illustration-sign-up-mobile.svg);
+  }
+
+  form {
+    width: 90%;
+  }
+
+  .container-2 {
+    min-height: 100vh;
+  }
+}
